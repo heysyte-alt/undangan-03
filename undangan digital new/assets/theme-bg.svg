@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fbf6f3"/>
+      <stop offset="100%" stop-color="#f3eae0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1200" fill="url(#g)" />
+  <!-- soft corner florals -->
+  <g transform="translate(60,60) scale(1)">
+    <ellipse cx="80" cy="80" rx="60" ry="40" fill="#f2d9c7" opacity="0.95"/>
+    <circle cx="30" cy="30" r="12" fill="#cfa86b" opacity="0.9" />
+    <path d="M120 10 C 140 40, 160 60, 120 90" stroke="#e8cdbf" stroke-width="6" fill="none" opacity="0.8"/>
+  </g>
+  <g transform="translate(1480,1040) rotate(180)">
+    <ellipse cx="80" cy="80" rx="60" ry="40" fill="#f2d9c7" opacity="0.95"/>
+    <circle cx="30" cy="30" r="12" fill="#cfa86b" opacity="0.9" />
+    <path d="M120 10 C 140 40, 160 60, 120 90" stroke="#e8cdbf" stroke-width="6" fill="none" opacity="0.8"/>
+  </g>
+  <!-- faint ornamental pattern center-right -->
+  <g opacity="0.12" transform="translate(1100,220) scale(1.6)">
+    <path d="M10 80 C40 10, 110 10, 140 80 C110 150, 40 150, 10 80 Z" fill="#d7b68a"/>
+  </g>
+</svg>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cover Section -->
+    <section id="cover" class="cover-section">
+    <div class="overlay"></div>
+                <img src="assets/gold-ornament.svg" class="ornament ornament-top-left" alt="ornament">
+
+                <!-- Side controls -->
+
+                <div class="cover-content cover-center">
+                        <!-- decorative photo shape placed behind the photo (purely visual) -->
+                        <div class="photo-shape" aria-hidden="true">
+                                <svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg" class="shape-oval">
+                                    <defs>
+                                        <linearGradient id="g1" x1="0%" x2="100%">
+                                            <stop offset="0%" stop-color="rgba(207,168,107,0.09)" />
+                                            <stop offset="100%" stop-color="rgba(207,168,107,0.02)" />
+                                        </linearGradient>
+                                    </defs>
+                                    <ellipse cx="100" cy="80" rx="86" ry="62" fill="url(#g1)" stroke="rgba(210,180,140,0.08)" stroke-width="1" />
+                                </svg>
+                        </div>
+
+                        <div class="frame-photo">
+                                <img src="assets/cover-avatar.svg" alt="Pasangan">
+                        </div>
+
+            <h3 class="cover-couple">Anissa &amp; Hamzah</h3>
+            <p class="cover-desc">Akan menyelenggarakan acara pernikahan pada</p>
+
+            <div class="date-block">
+                <div class="date-left">Sabtu</div>
+                <div class="date-center">
+                    <div class="date-day">25</div>
+                    <div class="date-month">Oktober</div>
+                </div>
+                <div class="date-right">2025</div>
+            </div>
+
+            <p class="starts-in">Acara akan dimulai dalam</p>
+
+            <div class="countdown-preview">
+                <div class="count-card"><span id="cv-days">00</span><small>Hari</small></div>
+                <div class="count-card"><span id="cv-hours">00</span><small>Jam</small></div>
+                <div class="count-card"><span id="cv-minutes">00</span><small>Menit</small></div>
+                <div class="count-card"><span id="cv-seconds">00</span><small>Detik</small></div>
+            </div>
+
+            <button id="openInvitation" class="btn-open">Buka Undangan</button>
+        </div>
+    </section>
+
+    <!-- Main Content (initially hidden) -->
+    <div id="mainContent" class="hidden">
+        <!-- Couple Info -->
+        <section id="couple" class="section">
+            <h2 class="section-title">Mempelai</h2>
+            <div class="couple-container">
+                <div class="groom">
+                    <div class="photo-frame">
+                        <img src="assets/groom.jpg" alt="Pengantin Pria">
+                    </div>
+                    <h3>Nama Pengantin Pria</h3>
+                    <p>Putra dari<br>Bpk. [Nama Ayah]<br>&<br>Ibu [Nama Ibu]</p>
+                </div>
+                <div class="bride">
+                    <div class="photo-frame">
+                        <img src="assets/bride.jpg" alt="Pengantin Wanita">
+                    </div>
+                    <h3>Nama Pengantin Wanita</h3>
+                    <p>Putri dari<br>Bpk. [Nama Ayah]<br>&<br>Ibu [Nama Ibu]</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Date & Venue -->
+        <section id="event" class="section">
+            <h2 class="section-title">Waktu & Tempat</h2>
+            <div class="event-container">
+                <div class="akad-nikah">
+                    <h3>Akad Nikah</h3>
+                    <p class="date">Minggu, 19 Oktober 2025</p>
+                    <p class="time">08:00 WIB</p>
+                    <p class="venue">Nama Tempat</p>
+                    <p class="address">Alamat Lengkap Tempat Acara</p>
+                    <a href="#" class="btn-maps">Lihat Lokasi</a>
+                </div>
+                <div class="resepsi">
+                    <h3>Resepsi</h3>
+                    <p class="date">Minggu, 19 Oktober 2025</p>
+                    <p class="time">11:00 - 14:00 WIB</p>
+                    <p class="venue">Nama Tempat</p>
+                    <p class="address">Alamat Lengkap Tempat Acara</p>
+                    <a href="#" class="btn-maps">Lihat Lokasi</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Countdown -->
+        <section id="countdown" class="section">
+            <h2 class="section-title">Menuju Hari Bahagia</h2>
+            <div class="countdown-container">
+                <div class="countdown-item">
+                    <span id="days">00</span>
+                    <p>Hari</p>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours">00</span>
+                    <p>Jam</p>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes">00</span>
+                    <p>Menit</p>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds">00</span>
+                    <p>Detik</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section id="gallery" class="section">
+            <h2 class="section-title">Galeri Foto</h2>
+            <div class="gallery-container">
+                <!-- Gallery images will be added here -->
+            </div>
+        </section>
+
+        <!-- RSVP -->
+        <section id="rsvp" class="section">
+            <h2 class="section-title">RSVP</h2>
+            <div class="rsvp-container">
+                <form id="rsvpForm">
+                    <input type="text" id="nama" name="nama" placeholder="Nama" required>
+                    <select id="kehadiran" name="kehadiran" required>
+                        <option value="">Konfirmasi Kehadiran</option>
+                        <option value="hadir">Hadir</option>
+                        <option value="tidak-hadir">Tidak Hadir</option>
+                    </select>
+                    <input type="number" id="jumlah" name="jumlah" placeholder="Jumlah Tamu" min="1" max="2">
+                    <textarea id="ucapan" name="ucapan" placeholder="Ucapan & Doa" required></textarea>
+                    <button type="submit" class="btn-submit">Kirim</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Wishes -->
+        <section id="wishes" class="section">
+            <h2 class="section-title">Ucapan & Doa</h2>
+            <div class="wishes-container">
+                <!-- Wishes will be displayed here -->
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Terima kasih atas doa dan kehadiran Anda</p>
+            <div class="couple-names">
+                <h3>Nama Pengantin Pria & Nama Pengantin Wanita</h3>
+            </div>
+        </footer>
+    
+        <!-- Classic printed-invite style section (from user scan) -->
+        <section id="classic-invite" class="section classic-invite">
+            <img src="assets/gold-ornament.svg" class="ornament ornament-bottom-right" alt="ornament">
+            <div class="invite-card">
+                <div class="invite-inner">
+                    <p class="bismillah">Bismillahirrahmanirrahim<br>Assalamu'alaikum Warahmatullahi Wabarakatuh</p>
+
+                    <p class="intro">Merupakan Suatu Kehormatan dan Kebahagiaan Bagi Kami Apabila Bapak/Ibu/Saudara/i Berkenan Hadir Untuk Memberikan Doa Restu Kepada Kedua Mempelai.</p>
+
+                    <h2 class="bride-name">Rohima Kurotul A'yun</h2>
+                    <p class="parents">Putri Kesembilan dari Bapak H. Syawalludin (Alm) dan Ibu Faridah</p>
+
+                    <p class="amp">Dengan</p>
+
+                    <h2 class="groom-name">Achmad Ferdian, S.Pd.</h2>
+                    <p class="parents">Putra Ketiga dari Bapak H. Safrudin dan Ibu Hj. Djumiati</p>
+
+                    <p class="when">Yang Insya Allah Akan Dilaksanakan Pada :</p>
+
+                    <div class="date-columns">
+                        <div class="col">
+                            <p class="label">Akad Nikah</p>
+                            <div class="big-date">
+                                <span class="day">07</span>
+                                <span class="year">2025</span>
+                            </div>
+                            <p class="month">November</p>
+                            <p class="time">Jumat, Pukul: 20.00 WITA s.d. Selesai</p>
+                            <p class="place">Bertempat di: Kediaman Mempelai Wanita</p>
+                        </div>
+                        <div class="col">
+                            <p class="label">Resepsi Pernikahan</p>
+                            <div class="big-date">
+                                <span class="day">08</span>
+                                <span class="year">2025</span>
+                            </div>
+                            <p class="month">November</p>
+                            <p class="time">Sabtu, Pukul: 09.00 WITA s.d. Selesai</p>
+                            <p class="place">Bertempat di: Kediaman Mempelai Wanita</p>
+                        </div>
+                    </div>
+
+                    <p class="closing">Atas Kehadiran dan Doa Restu Bapak/Ibu/Saudara/i Kami Mengucapkan Terima Kasih.</p>
+                    <p class="salam">Wassalamu'alaikum Warahmatullahi Wabarakatuh</p>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
